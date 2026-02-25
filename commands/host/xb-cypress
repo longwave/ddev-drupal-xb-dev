@@ -13,7 +13,7 @@
 cd "$(dirname "$0")" || exit 1
 
 CYPRESS_BIN="$(dirname "$0")/../../../web/modules/contrib/canvas/node_modules/cypress/bin/cypress"
-$CYPRESS_BIN_INSIDE_CONTAINER="/var/www/html/web/modules/contrib/canvas/node_modules/cypress/bin/cypress"
+CYPRESS_BIN_INSIDE_CONTAINER="/var/www/html/web/modules/contrib/canvas/node_modules/cypress/bin/cypress"
 
 # Check for the presence of Cypress.
 if ! command -v "$CYPRESS_BIN" &>/dev/null; then
